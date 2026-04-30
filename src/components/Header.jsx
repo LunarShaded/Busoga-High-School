@@ -3,16 +3,19 @@ import styles from './Header.module.css'
 
 export default function Header() {
 
-
   return (
     <>
       <section className={styles.header}>
-        <nav>
+
           <div className={styles.logo}>
-              <h1>Busoga High School</h1>
-              <p>Kamuli, Uganda</p>
+              <Book className={styles.icon}/>
+              <div>
+                <h1>Busoga High School</h1>
+                <p>Kamuli, Uganda</p>
+              </div>
           </div>
 
+        <nav>
           <div className={styles.navLinks}>
             <ul>
               <li><a href="#">Home</a></li>
