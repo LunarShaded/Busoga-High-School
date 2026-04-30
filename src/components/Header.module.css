@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  background-color: green;
+  padding: 10px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navLinks{
+  padding-top: 15px;
+}
+
+.navLinks ul{
+  display: flex;
+  gap: 10px;
+}
+
+.navLinks ul li{
+  list-style: none;
+}
+
+.navLinks ul a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
