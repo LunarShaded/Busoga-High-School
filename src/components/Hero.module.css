@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+
+.heroSector{
+   background:linear-gradient(50deg, rgb(60, 102, 60), rgb(31, 87, 31));
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   min-height: calc(100vh - 79px);
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.heroInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroInfo h1{
+    font-size: 60px;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-weight: 200;
+    color: rgba(203, 255, 199, 0.819);
+}
+
+.description{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgba(203, 255, 199, 0.819);
+}
+
+img{
+    width: 550px;
+    height: 450px;
+    border-radius: 7px;
+    box-shadow:0 6px 10px rgba(0, 0, 0, 0.34);
+}
+
+.btnSector{
+    display: flex;
+    gap: 15px;
+}
+
+.btnSector a{
+  text-decoration: none;
+}
+
+.applyBtn{
+   text-align: center;
+   color: rgb(60, 102, 60);
+   background: white;
+   border-radius: 5px;
+   padding: 13px 20px 13px 20px;
+   box-shadow:0 2px 8px rgba(0, 0, 0, 0.245);
+   transition: 0.3s;
+}
+
+.contactBtn{
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 13px 20px 13px 20px;
+    transition: 0.3s;
+}
+
+.exploreBtn{
+    color: rgb(208, 241, 207);
+    text-align: center;
+    border: 2px solid rgb(208, 241, 207);
+    border-radius: 7px;
+    padding: 13px 20px 13px 20px;
+    transition: 0.3s;
+}
+
+.applyBtn:hover{
+    transform: scale(1.05);
+}
+
+.contactBtn:hover{
+    background: white;
+    color: rgb(60, 102, 60);
+}
+
+.exploreBtn:hover{
+    background: rgb(208, 241, 207);
+    color: rgb(60, 102, 60);
+}
