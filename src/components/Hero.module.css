@@ -92,3 +92,84 @@ img{
     background: rgb(208, 241, 207);
     color: rgb(60, 102, 60);
 }
+
+@media (max-width: 1024px) {
+
+    .heroSector {
+      padding: 20px;
+    }
+  
+    .heroInfo h1 {
+      font-size: 45px;
+    }
+  
+    .subtitle {
+      font-size: 20px;
+    }
+  
+    .description {
+      font-size: 18px;
+    }
+  
+    img {
+      width: 420px;
+      height: 340px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .heroSector {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+      padding: 30px 15px;
+    }
+  
+    .heroInfo h1 {
+      font-size: 38px;
+    }
+  
+    .subtitle {
+      font-size: 18px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    img {
+      width: 320px;
+      height: 260px;
+    }
+  
+    .btnSector {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .heroInfo h1 {
+      font-size: 30px;
+    }
+  
+    .subtitle {
+      font-size: 16px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    img {
+      width: 260px;
+      height: 200px;
+    }
+  
+    .btnSector a {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
