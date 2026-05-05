@@ -2,7 +2,7 @@ import styles from './AboutHero.module.css'
 import { User } from '@boxicons/react';
 import { Bullseye } from '@boxicons/react';
 import { EyeAlt } from '@boxicons/react';
-import { Timeline } from '@boxicons/react';
+import { CheckShield } from '@boxicons/react';
 
 export default function AboutHero(){
    return(
@@ -14,7 +14,7 @@ export default function AboutHero(){
         <div className={styles.studentsWrapper}>
           <User className={styles.icon}/>
            <div>
-             <p className={styles.count}><strong>500+</strong></p>
+             <p className={styles.count}><strong>100+</strong></p>
              <p className={styles.studentsWord}>Students</p>
           </div>
         </div>
@@ -60,6 +60,17 @@ export default function AboutHero(){
            </div>
       
         </div>
+       </div>
+
+       <div className={styles.accreditation}>
+         <div className={styles.accreditationWrapper}>
+            <div className={styles.iconWrapper}>
+            <CheckShield className={styles.checkIcon}/>
+            </div>
+            <h1>Accreditation</h1>
+            <p>Kitante Hill School is fully accredited by the Uganda Ministry of Education and Sports, 
+               ensuring our curriculum meets the highest<br/> national standards for secondary education.</p>
+         </div>
        </div>
 
      </section>
