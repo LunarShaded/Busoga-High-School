@@ -3,12 +3,12 @@ body{
 }
 
 .heroSector{
-   background:linear-gradient(50deg, rgb(60, 102, 60), rgb(31, 87, 31));
+   background:linear-gradient(50deg, rgb(60, 102, 60), rgb(85, 122, 85));
    color: white;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   min-height: calc(100vh - 79px);
+   min-height: calc(100vh - 78px);
    width: 100%;
    box-sizing: border-box;
 }
