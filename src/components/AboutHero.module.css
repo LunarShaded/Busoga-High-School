@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+
+.aboutSection{
+    padding-top: 100px;
+    background: rgb(246, 246, 246);
+    min-height: 100vh;
+}
+
+.studentsCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    font-size: 36px;
+}
+
+.studentsWord{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.icon{
+    margin-right: 6px;
+    color: green;
+    width: 60px;
+    height: 60px;
+}
+
+.studentsWrapper{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.34);
+}
+
+.heroTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+}
+
+.heroTitle h1{
+    font-size: 45px;
+}
+
+.heroTitle p{
+    font-size: 28px;
+}
+
+.heroAbout{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.heroHistory{
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroMission{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.missionSector{
+    display: flex;
+    align-items: center;
+}
+
+.visionSector{
+    display: flex;
+    align-items: center;
+}
+
+.iconParagraph{
+    margin-right: 15px;
+    color: green;
+    width: 34px;
+    height: 34px;
+}
+
+.heroHistory h2{
+    font-size: 30px;
+}
+
+.heroHistory p{
+    font-size: 19px;
+}
+
+.heroMission h2{
+    font-size: 30px;
+}
+
+
+.heroMission p{
+    font-size: 19px;
+}
