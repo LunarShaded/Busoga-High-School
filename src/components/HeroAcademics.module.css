@@ -1,0 +1,306 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.academicsSection{
+    background: white;
+    min-height: 200vh;
+    padding: 120px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainTitle{
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.mainTitle h1{
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: 600;
+}
+
+.mainTitle p{
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 200;
+}
+
+.boxCard{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1240px;
+    flex-wrap: wrap;
+}
+
+.firstCard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(185, 252, 191, 0.441);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.secondCard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(58, 104, 242, 0.186);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.programTitle{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.programTitle h2{
+    font-size: clamp(26px, 3vw, 32px);
+    font-weight: 700;
+}
+
+.bookIcon{
+    color: green;
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+}
+
+.trophyIcon{
+    color: rgb(80, 54, 227);
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+}
+
+.academicText p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.academicList{
+    margin-left: 20px;
+}
+
+.programList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    color: rgb(83, 83, 83);
+    padding: 0;
+}
+
+.programList li::before {
+    content: "•";
+    color: rgb(83, 83, 83);
+    margin-right: 8px;
+}
+
+.departmentsTitle{
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.departmentsTitle h1{
+    font-weight: 700;
+    font-size: clamp(28px, 3vw, 32px);
+}
+
+.departments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.departmentCard{
+    background: rgba(228, 233, 249, 0.422);
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.departmentCard:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.134);
+}
+
+.departmentCardTitle{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.departmentIcon{
+    color: green;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.studyList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 14px;
+    padding: 0;
+}
+
+.studyList li{
+    list-style: none;
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+}
+
+.studyList li::before {
+    content: "•";
+    color: rgb(83, 83, 83);
+    margin-right: 8px;
+}
+
+.activities{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.activitiesWrapper{
+    background:linear-gradient(40deg, rgb(59, 169, 59), rgb(85, 122, 85));
+    padding: 20px 40px 25px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.activitiesIconElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.activitiesIcon{
+    color: white;
+    width: 64px;
+    height: 64px;
+}
+
+.activitiesTitle{
+    text-align: center;
+}
+
+.activitiesTitle h2{
+    color: white;
+    font-size: clamp(28px, 3vw, 32px);
+    font-weight: 700;
+}
+
+.activitiesTitle p{
+    color: rgb(196, 255, 200);
+    font-size: 18px;
+}
+
+.activitiesList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.activitiesItem{
+    text-align: center;
+    background: rgba(196, 255, 200, 0.316);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+@media (max-width: 1200px){
+
+    .departments{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activitiesList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+
+    .academicsSection{
+        padding-top: 80px;
+    }
+
+    .boxCard{
+        flex-direction: column;
+    }
+
+    .departments{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .activitiesList{
+        grid-template-columns: 1fr;
+    }
+
+    .activitiesWrapper{
+        padding: 20px;
+    }
+
+    .firstCard,
+    .secondCard,
+    .departmentCard{
+        padding: 20px;
+    }
+
+    .activitiesItem{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .mainTitle{
+        margin-bottom: 40px;
+    }
+
+    .academicText p,
+    .activitiesTitle p{
+        font-size: 16px;
+    }
+
+    .programTitle h2{
+        font-size: 24px;
+    }
+
+    .activitiesItem{
+        padding: 12px;
+        font-size: 16px;
+    }
+}

@@ -14,7 +14,7 @@ export default function AboutHero(){
         <div className={styles.studentsWrapper}>
           <User className={styles.icon}/>
            <div>
-             <p className={styles.count}><strong>100+</strong></p>
+             <p className={styles.count}><strong>500+</strong></p>
              <p className={styles.studentsWord}>Students</p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function AboutHero(){
             <CheckShield className={styles.checkIcon}/>
             </div>
             <h1>Accreditation</h1>
-            <p>Kitante Hill School is fully accredited by the Uganda Ministry of Education and Sports, 
+            <p>Kitante Hill School is fully accredited by the <strong>Uganda Ministry of Education and Sports</strong>, 
                ensuring our curriculum meets the highest<br/> national standards for secondary education.</p>
          </div>
        </div>
