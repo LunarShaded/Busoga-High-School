@@ -1,43 +1,52 @@
 body{
     margin: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 .aboutSection{
-    padding-top: 100px;
+    padding: 100px 20px 60px 20px;
     background: rgb(246, 246, 246);
-    min-height: 135vh;
+    min-height: 130vh;
 }
 
 .studentsCount{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .count{
-    font-size: 36px;
+    font-size: clamp(24px, 3vw, 28px);
 }
 
 .studentsWord{
-    font-size: 30px;
+    font-size: clamp(20px, 2.5vw, 24px);
     font-weight: 200;
 }
 
 .icon{
     margin-right: 6px;
     color: green;
-    width: 60px;
-    height: 60px;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
 }
 
 .studentsWrapper{
-    padding: 10px;
+    padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(255, 255, 255);
     border-radius: 7px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.145);
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .heroTitle{
@@ -46,32 +55,40 @@ body{
     gap: 30px;
     text-align: center;
     padding: 40px 0px 20px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .heroTitle h1{
-    font-size: 45px;
+    font-size: clamp(30px, 4vw, 38px);
 }
 
 .heroTitle p{
-    font-size: 28px;
+    font-size: clamp(18px, 2.5vw, 24px);
 }
 
 .heroAbout{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-
 .heroHistory{
-    width: 35%;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
 .heroMission{
-    width: 35%;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -79,36 +96,38 @@ body{
 
 .missionSector{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .visionSector{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .iconParagraph{
     margin-right: 15px;
     color: green;
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
 }
 
 .heroHistory h2{
-    font-size: 34px;
+    font-size: clamp(26px, 3vw, 30px);
 }
 
 .heroHistory p{
-    font-size: 24px;
+    font-size: 19px;
+    line-height: 1.6;
 }
 
 .heroMission h2{
-    font-size: 34px;
+    font-size: clamp(26px, 3vw, 30px);
 }
 
-
 .heroMission p{
-    font-size: 24px;
+    font-size: 19px;
+    line-height: 1.6;
 }
 
 .accreditation{
@@ -116,13 +135,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .accreditationWrapper{
     background: white;
-    padding: 16px 120px 44px 120px;
+    padding: 30px 100px 44px 100px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.145);
+    width: 100%;
+    max-width: 1500px;
 }
 
 .checkIcon{
@@ -140,10 +162,83 @@ body{
 
 .accreditationWrapper h1{
     text-align: center;
-    font-size: 42px;
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 .accreditationWrapper p{
     text-align: center;
-    font-size: 22px;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.6;
+}
+
+@media (max-width: 992px){
+
+    .heroAbout{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroHistory,
+    .heroMission{
+        max-width: 100%;
+    }
+
+    .accreditationWrapper{
+        padding: 30px 40px 40px 40px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .aboutSection{
+        padding-top: 80px;
+    }
+
+    .heroTitle{
+        gap: 20px;
+    }
+
+    .heroAbout{
+        gap: 30px;
+    }
+
+    .heroHistory p,
+    .heroMission p{
+        font-size: 17px;
+    }
+
+    .accreditation{
+        padding-top: 70px;
+    }
+
+    .accreditationWrapper{
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .studentsWrapper{
+        text-align: center;
+    }
+
+    .icon{
+        width: 44px;
+        height: 44px;
+    }
+
+    .iconParagraph{
+        width: 36px;
+        height: 36px;
+    }
+
+    .checkIcon{
+        width: 44px;
+        height: 44px;
+    }
+
+    .heroHistory p,
+    .heroMission p{
+        font-size: 16px;
+    }
 }
