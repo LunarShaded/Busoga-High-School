@@ -17,8 +17,11 @@ body{
 }
 
 .mainTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     max-width: 900px;
     width: 100%;
 }
@@ -117,12 +120,12 @@ body{
 
 .departmentsTitle{
     text-align: center;
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .departmentsTitle h1{
     font-weight: 700;
-    font-size: clamp(28px, 3vw, 32px);
+    font-size: clamp(36px, 3vw, 32px);
 }
 
 .departments{
@@ -180,7 +183,7 @@ body{
 }
 
 .activities{
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
     max-width: 1240px;
 }
