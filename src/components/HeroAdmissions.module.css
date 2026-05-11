@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.admissionsSection{
+    background: rgb(246, 246, 246);
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+}
+
+.mainTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mainTitle h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.mainTitle p{
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.cardsBox{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.applicationCard{
+    background: white;
+    border-radius: 8px;
+    padding: 35px;
+    display: flex;
+    width: 100%;
+    max-width: 520px;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.122);
+}
+
+.admissionTitle{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.titleIcon{
+    color: green;
+    height: 42px;
+    width: 42px;
+}
+
+.admissionTitle h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.requirementsText p{
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+
+.requirementsList ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.requirementsList ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    color: rgb(83, 83, 83);
+}
+
+.listIcon{
+    color: green;
+    height: 28px;
+    width: 28px;
+    flex-shrink: 0;
+}
+
+.processList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 90px;
+    padding-top: 20px;
+}
+
+.listItem{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.listItem h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.listItem p{
+    font-size: 16px;
+}
+
+.listCount{
+    background: rgba(185, 252, 191, 0.441);
+    color: green;
+    font-weight: 600;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+
+.officeCard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 60px;
+    background: white;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.122);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.officeIconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.officeIcon{
+    color: green;
+    height: 44px;
+    width: 44px;
+}
+
+.officeText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.officeText h2{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.officeText p{
+    color: rgb(83, 83, 83);
+    font-size: 18px;
+}
+
+.contactBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contactIconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIcon{
+    color: green;
+    width: 28px;
+    height: 28px;
+}
+
+.contactInfo{
+    text-align: center;
+}
+
+.contactInfo h3{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px){
+
+    .cardsBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .applicationCard{
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .admissionsSection{
+        padding: 50px 15px;
+    }
+
+    .mainTitle h1{
+        font-size: 36px;
+    }
+
+    .mainTitle p{
+        font-size: 19px;
+    }
+
+    .applicationCard{
+        padding: 28px;
+    }
+
+    .admissionTitle h2{
+        font-size: 28px;
+    }
+
+    .requirementsText p{
+        font-size: 18px;
+    }
+
+    .requirementsList ul li{
+        font-size: 17px;
+    }
+
+    .listItem{
+        gap: 15px;
+    }
+
+    .listItem h3{
+        font-size: 18px;
+    }
+
+    .listItem p{
+        font-size: 15px;
+    }
+
+    .officeCard{
+        padding: 20px;
+    }
+
+    .officeText h2{
+        font-size: 24px;
+    }
+
+    .officeText p{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .mainTitle h1{
+        font-size: 30px;
+    }
+
+    .mainTitle p{
+        font-size: 17px;
+    }
+
+    .applicationCard{
+        padding: 22px;
+    }
+
+    .admissionTitle{
+        align-items: flex-start;
+    }
+
+    .admissionTitle h2{
+        font-size: 24px;
+    }
+
+    .titleIcon{
+        width: 36px;
+        height: 36px;
+    }
+
+    .requirementsText p{
+        font-size: 16px;
+    }
+
+    .requirementsList ul li{
+        font-size: 15px;
+        align-items: flex-start;
+    }
+
+    .processList{
+        padding-bottom: 40px;
+    }
+
+    .listItem{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .listItem h3{
+        font-size: 17px;
+    }
+
+    .listItem p{
+        font-size: 14px;
+    }
+
+    .listCount{
+        font-size: 18px;
+    }
+
+    .officeText h2{
+        font-size: 22px;
+    }
+
+    .officeText p{
+        font-size: 16px;
+    }
+
+    .contactBox{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
