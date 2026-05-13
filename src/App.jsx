@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx'
 import AboutHero from './components/AboutHero.jsx'
 import HeroAcademics from './components/HeroAcademics.jsx'
 import HeroAdmissions from './components/HeroAdmissions.jsx'
+import HeroNews from './components/HeroNews.jsx'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <AboutHero/>
       <HeroAcademics/>
       <HeroAdmissions/>
+      <HeroNews/>
     </>
   )
 }

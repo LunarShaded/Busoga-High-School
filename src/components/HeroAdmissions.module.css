@@ -24,7 +24,7 @@ body{
 }
 
 .mainTitle h1{
-    font-size: 45px;
+    font-size: clamp(42px, 4vw, 38px);
     font-weight: 600;
 }
 
