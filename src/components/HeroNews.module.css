@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.NewsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+    background: white;
+    min-height: 120vh;
+}
+
+.mainTitle{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.mainTitle h1{
+    font-size: clamp(38px, 4vw, 42px);
+    font-weight: 600;
+}
+
+.mainTitle p{
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 200;
+    color: rgb(83, 83, 83);
+}
+
+.NewsEventBox{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.topTitle{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topTitle h2{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.newsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.newsCard{
+    background: rgba(234, 234, 234, 0.256);
+    padding: 20px 55px 20px 40px;
+    border-radius: 12px;
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    
+    transition: 0.2s ease;
+}
+
+.newsCard:hover{
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.067);
+}
+
+.titleIcon{
+    color: green;
+    width: 28px;
+    height: 28px;
+}
+
+.cardTitle{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cardTitleContent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardDateTitle{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cardDateTitle p{
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+}
+
+.cardIconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(185, 252, 191, 0.441);
+    padding: 6px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.cardIcon{
+    color: green;
+    width: 34px;
+    height: 34px;
+}
+
+.titleLight p{
+    color: rgb(4, 87, 4);
+    font-weight: 500;
+    background: rgba(185, 252, 191, 0.441);
+    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+}
+
+.clockIcon{
+    color: rgb(83, 83, 83);
+    width: 18px;
+    height: 18px;
+}
+
+.cardContent{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardContent h3{
+    color: rgb(31, 26, 51);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.cardContent p{
+    font-size: 17px;
+    color: rgb(23, 23, 23);
+    font-weight: 300;
+}
+
+.eventsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eventCard{
+    background: rgb(26, 28, 42);
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    width: 600px;
+    padding: 10px;
+}
+
+.eventSection{
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.149);
+} 
+
+.eventSection:last-child{
+    border-bottom: none;
+}
+
+.eventContent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.eventTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventTitle h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.eventLight{
+    background: rgb(36, 161, 46);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eventDate{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eventDate p{
+    font-size: 14px;
+    color: rgb(210, 210, 210);
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dateTime{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.eventDateIcon{
+    color: rgb(210, 210, 210);
+    width: 19px;
+    height: 19px;
+}  
+
+.termDatesCard{
+    background: rgba(185, 252, 191, 0.282);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.termDatesCard h2{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.termStroke{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.termStroke h3{
+    color: rgb(57, 56, 56);
+    font-weight: 500;
+}
+
+.termStroke p{
+    font-size: 16px;
+    color: rgb(40, 39, 39);
+}
+
+@media (max-width: 1024px){
+    .NewsEventBox{
+        flex-direction: column;
+    }
+
+    .eventCard{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .newsCard{
+        padding: 18px 20px;
+    }
+
+    .mainTitle{
+        margin-bottom: 40px;
+    }
+}
