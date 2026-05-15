@@ -8,8 +8,9 @@ export default function AboutHero(){
    return(
     <>
     
-     <section className={styles.aboutSection}>
+     <section id="about" className={styles.aboutSection}>
 
+            {/* Students counter */}
        <div className={styles.studentsCount}>
         <div className={styles.studentsWrapper}>
           <User className={styles.icon}/>
@@ -19,15 +20,16 @@ export default function AboutHero(){
           </div>
         </div>
        </div>
-
+            {/* Main heading */}
        <div className={styles.heroTitle}>
           <h1>About Busoga High School</h1>
           <p>A leading secondary education institution 
              committed to academic<br/>
              excellence and character development</p>
        </div>
-
+            {/* About content */}
        <div className={styles.heroAbout}>
+         {/* School history */}
            <div className={styles.heroHistory}>
             <h2>Our History</h2>
             <p>Busoga High School, located in Kamuli, Uganda, has long been a place of learning, growth, and opportunity. <br/>
@@ -38,7 +40,7 @@ export default function AboutHero(){
                ready to make a difference in the world.</p>
          </div>
          
-             
+             {/* Mission & vision */}
 
          <div className={styles.heroMission}>
            
@@ -61,6 +63,8 @@ export default function AboutHero(){
       
         </div>
        </div>
+
+       {/* Accreditation section */}
 
        <div className={styles.accreditation}>
          <div className={styles.accreditationWrapper}>

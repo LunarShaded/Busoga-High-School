@@ -11,13 +11,19 @@ import { Group } from '@boxicons/react';
 export default function HeroAcademics(){
     return(
         <>
-          <section className={styles.academicsSection}>
+          <section id="academics" className={styles.academicsSection}>
+
+            {/* Main heading */}
             <div className={styles.mainTitle}>
                 <h1>Academics Excellence</h1>
                 <p>Comprehensive curriculum designed to prepare students for higher education<br/>and succesful careers</p>
             </div>
 
+            {/* Academic programs */}
+
             <div className={styles.boxCard}>
+
+                {/* O-Level */}
                 <div className={styles.firstCard}>
                   <div className={styles.programTitle}>
                     <BookOpen className={styles.bookIcon}/>
@@ -39,6 +45,8 @@ export default function HeroAcademics(){
                    </div>
                   
                 </div>
+
+                {/* A-Level */}
 
                 <div className={styles.secondCard}>
                   <div className={styles.programTitle}>
@@ -62,6 +70,8 @@ export default function HeroAcademics(){
 
                 </div>
             </div>
+            
+            {/* Departments */}
 
             <div className={styles.departmentsTitle}>
                 <h1>Our Departments</h1>
@@ -131,6 +141,8 @@ export default function HeroAcademics(){
                    </ul>
                 </div>
             </div>
+
+            {/* Activities */}
 
 
             <div className={styles.activities}>

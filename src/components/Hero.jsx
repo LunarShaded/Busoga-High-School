@@ -5,7 +5,7 @@ import photo from '/src/assets/photo/BusogaSchool.jpg'
 export default function Hero(){
     return(
         <>
-          <section className={styles.heroSector}>
+          <section id="home" className={styles.heroSector}>
             <div className={styles.heroInfo}>
                 <h1>Busoga <br/>High School</h1>
                 <p className={styles.subtitle}>Excellence in High Education</p>
@@ -17,7 +17,7 @@ export default function Hero(){
 
              <div className={styles.btnSector}>
                 <a href='#' className={styles.applyBtn}>Apply Now</a>
-                <a href='#' className={styles.contactBtn}>Contact Us</a>
+                <a href='#contact' className={styles.contactBtn}>Contact Us</a>
                 <a href='#' className={styles.exploreBtn}>Explore Programs</a>
              </div>
             </div>

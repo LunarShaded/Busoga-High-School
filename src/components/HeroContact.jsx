@@ -9,13 +9,17 @@ export default function HeroContact(){
     return(
         <>
         
-         <section className={styles.contactSection}>
+         <section id="contact" className={styles.contactSection}>
+
+            {/* Main heading */}
             <div className={styles.mainTitle}>
                 <h1>Contact us</h1>
                 <p>Get in touch with us for admissions, inquiries, or any questions about Busoga High<br/> School</p>
             </div>
 
             <div className={styles.contactBox}>
+
+                {/* Contact information */}
                 <div className={styles.contactInfo}>
                   <h2>Get In Touch</h2>
 
@@ -39,7 +43,7 @@ export default function HeroContact(){
                     </div>
 
                     <div className={styles.contactContentItem}>
-                       <Location className={styles.contactIcon}/>
+                       <EnvelopeAlt className={styles.contactIcon}/>
                         <div className={styles.contactContentTitle}>
                          <h3>Email</h3>
                          <p>example@example.com</p>
@@ -47,7 +51,7 @@ export default function HeroContact(){
                     </div>
 
                     <div className={styles.contactContentItem}>
-                       <Location className={styles.contactIcon}/>
+                       <Clock className={styles.contactIcon}/>
                         <div className={styles.contactContentTitle}>
                          <h3>Office Hours</h3>
                          <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
@@ -57,6 +61,8 @@ export default function HeroContact(){
                     </div>
 
                   </div>
+
+                  {/* Google map */}
 
                   <div className={styles.addressMapBox}>
 
@@ -68,6 +74,8 @@ export default function HeroContact(){
                   </div>
 
                 </div>
+
+                 {/* Contact form */}
 
                 
 
@@ -106,6 +114,8 @@ export default function HeroContact(){
                             </div>
 
                         </div>
+
+                        {/* Message field */}
 
                         <div className={styles.bottomForm}>
                             <div className={styles.contactMessage}>

@@ -8,13 +8,19 @@ import { Envelope } from '@boxicons/react';
 export default function HeroAdmissions(){
     return(
         <>
-          <section className={styles.admissionsSection}>
+          <section id="admissions" className={styles.admissionsSection}>
+
+            {/* Main heading */}
              <div className={styles.mainTitle}>
               <h1>Admissions</h1>
               <p>Join our community of learners and embark on a journey of academic excellecne</p>
              </div>
 
+             {/* Admission cards */}
+
              <div className={styles.cardsBox}>
+
+               {/* Requirements */}
                <div className={styles.applicationCard}>
                  <div className={styles.admissionTitle}>
                    <SealCheck className={styles.titleIcon}/>
@@ -39,6 +45,8 @@ export default function HeroAdmissions(){
                  </div>
 
                </div>
+
+                 {/* Application process */}
 
                <div className={styles.applicationCard}>
                   <div className={styles.admissionTitle}>
@@ -83,6 +91,8 @@ export default function HeroAdmissions(){
                </div>
              </div>
 
+             {/* Admissions office */}
+
 
              <div className={styles.officeCard}>
                 <div className={styles.officeIconBox}><User className={styles.officeIcon}/></div>
@@ -91,6 +101,8 @@ export default function HeroAdmissions(){
                  <h2>Admissions Office</h2>
                  <p>Have questions about the admissions process? Our admissions team is here to help</p>
                 </div>
+
+                {/* Contact info */}
 
                 <div className={styles.contactBox}>
                   <div className={styles.contactInfo}>
