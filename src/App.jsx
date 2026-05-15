@@ -6,6 +6,7 @@ import HeroAcademics from './components/HeroAcademics.jsx'
 import HeroAdmissions from './components/HeroAdmissions.jsx'
 import HeroNews from './components/HeroNews.jsx'
 import HeroContact from './components/HeroContact.jsx'
+import HeroFooter from './components/HeroFooter.jsx'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <HeroAdmissions/>
       <HeroNews/>
       <HeroContact/>
+      <HeroFooter/>
     </>
   )
 }

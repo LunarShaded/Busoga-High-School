@@ -8,7 +8,9 @@ import { Clock } from '@boxicons/react';
 export default function HeroNews() {
     return (
         <>
-            <section className={styles.NewsSection}>
+            <section id="news" className={styles.NewsSection}>
+
+                {/* Main heading */}
                 <div className={styles.mainTitle}>
                     <h1>News & Events</h1>
                     <p>Stay updated with the latest news, achievements, and upcoming events at Busoga High School</p>
@@ -16,12 +18,16 @@ export default function HeroNews() {
 
                 <div className={styles.NewsEventBox}>
 
+                    {/* Latest news section */}
+
 
                     <div className={styles.newsBox}>
                         <div className={styles.topTitle}>
                             <BookOpen className={styles.titleIcon} />
                             <h2>Latest News</h2>
                         </div>
+
+                        {/* News card 1 */}
 
                         <div className={styles.newsCard}>
 
@@ -59,6 +65,8 @@ export default function HeroNews() {
                              </div>
                         </div>
 
+                        {/* News card 2 */}
+
                         <div className={styles.newsCard}>
 
                                 <div className={styles.cardIconBox}>
@@ -95,6 +103,8 @@ export default function HeroNews() {
 
                              </div>
                         </div>
+
+                        {/* News card 3 */}
 
                         <div className={styles.newsCard}>
 
@@ -134,6 +144,8 @@ export default function HeroNews() {
                         </div>
                     </div>
 
+                    {/* Events section */}
+
     
                     <div className={styles.eventsBox}>
                         <div className={styles.topTitle}>
@@ -142,6 +154,8 @@ export default function HeroNews() {
                         </div>
 
                         <div className={styles.eventCard}>
+
+                            {/* Event 1 */}
 
                             <div className={styles.eventSection}>
 
@@ -174,6 +188,8 @@ export default function HeroNews() {
                              </div>
 
                             </div>
+
+                            {/* Event 2 */}
 
                             <div className={styles.eventSection}>
 
@@ -209,6 +225,8 @@ export default function HeroNews() {
 
                             </div>
 
+                            {/* Event 3 */}
+
                             <div className={styles.eventSection}>
 
                              <div className={styles.eventContent}>
@@ -242,6 +260,8 @@ export default function HeroNews() {
                              
 
                             </div>
+
+                            {/* Event 4 */}
 
                             <div className={styles.eventSection}>
 
@@ -278,6 +298,7 @@ export default function HeroNews() {
                             </div>
 
                         </div>
+                         {/* Term dates */}
 
                        <div className={styles.termDatesCard}>
                          <h2>2025 Term Dates</h2>
