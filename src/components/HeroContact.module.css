@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+    background: rgb(246, 246, 246);
+    min-height: 120vh;
+}
+
+.mainTitle{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.mainTitle h1{
+    font-size: clamp(38px, 4vw, 42px);
+    font-weight: 600;
+}
+
+.mainTitle p{
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 300;
+}
+
+.contactBox{
+    display: flex;
+    gap: 55px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: start;
+    width: 600px;
+    min-width: 0;
+}
+
+.contactInfo h2{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.contactContent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactContentItem{
+    display: flex;
+    gap: 12px;
+}
+
+.contactIcon{
+    color: green;
+    height: 26px;
+    width: 26px;
+    flex-shrink: 0;
+}
+
+.contactContentTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.contactContentTitle h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contactContentTitle p{
+    color: #252334;
+    font-size: 17px;
+    font-weight: 350;
+    word-break: break-word;
+}
+
+.addressMapBox{
+    min-height: 250px;
+    width: 100%;
+}
+
+.addressMap{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+.form{
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.188);
+    width: 100%;
+    max-width: 650px;
+}
+
+.form h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(26, 27, 35);
+}
+
+.formBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.formItem{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.input{
+    border: 1px solid #ccc;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    transition:border 0.2s ease;
+    width: 100%;
+}
+
+.input:focus{
+    border: 1px solid rgb(79, 161, 79);
+}
+
+.textarea{
+    width: 100%;
+    min-height: 180px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.textarea:focus{
+    border: 1px solid rgb(79, 161, 79);
+}
+
+.contactSelect{
+    border: 1px solid #ccc;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    width: 100%;
+}
+
+.formItem p{
+    font-size: 13px;
+    font-weight:500;
+}
+
+.bottomForm{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.contactMessage{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contactMessage p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    background: rgb(79, 161, 79);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 12px;
+    transition: 0.2s ease;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.btn:hover{
+    background: rgb(55, 112, 55);
+}
+
+@media (max-width: 1100px){
+    .contactBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfo{
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .formBox{
+        grid-template-columns: 1fr;
+    }
+
+    .form{
+        padding: 25px;
+    }
+
+    .mainTitle{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px){
+    .contactSection{
+        padding: 40px 15px;
+    }
+
+    .form{
+        padding: 20px;
+    }
+
+    .input,
+    .contactSelect{
+        padding: 12px 16px;
+    }
+}
