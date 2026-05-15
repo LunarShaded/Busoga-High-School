@@ -72,7 +72,7 @@ export default function AboutHero(){
             <CheckShield className={styles.checkIcon}/>
             </div>
             <h1>Accreditation</h1>
-            <p>Kitante Hill School is fully accredited by the <strong>Uganda Ministry of Education and Sports</strong>, 
+            <p>Busoga High School is fully accredited by the <strong>Uganda Ministry of Education and Sports</strong>, 
                ensuring our curriculum meets the highest<br/> national standards for secondary education.</p>
          </div>
        </div>
