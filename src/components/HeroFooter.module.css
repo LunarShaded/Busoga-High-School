@@ -141,26 +141,111 @@ body{
     color: rgb(96, 210, 96);
 }
 
-@media (max-width: 1100px){
-    .footerContainer{
-        gap: 60px;
+@media (max-width: 1024px) {
+    .footer {
+        min-height: auto !important; 
+        height: auto !important;
+        padding: 50px 20px 40px 20px !important;
+    }
+
+    .footerContainer {
+        gap: 40px !important; 
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    .footerColumn {
+        flex: 1 1 200px !important; 
+        min-width: 200px !important;
     }
 }
 
-@media (max-width: 900px){
-    .footerContainer{
-        flex-wrap: wrap;
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 16px 30px 16px !important;
+    }
+
+    .footerContainer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 32px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .footerColumn {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .footerColumnText {
+        max-width: 100% !important;
+    }
+
+    .bottomFooterContainer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+        padding-top: 20px !important;
+    }
+
+    .rightItem ul {
+        flex-direction: column !important;
+        gap: 12px !important;
     }
 }
 
-@media (max-width: 768px){
-    .footerContainer{
-        flex-direction: column;
-        gap: 40px;
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 12px 20px 12px !important;
     }
 
-    .bottomFooterContainer{
-        flex-direction: column;
-        align-items: flex-start;
+    .footerContainer {
+        gap: 24px !important;
+        padding-bottom: 25px !important;
+    }
+
+
+    .footer p,
+    .footer a,
+    .footer span,
+    .footer li {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .footerColumnTitleText h2 {
+        font-size: 18px !important;
+    }
+
+    .columnIcon {
+        height: 26px !important;
+        width: 28px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .infoIcon {
+        height: 20px !important;
+        width: 18px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .infoItem {
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+
+    .footerColumnList ul {
+        gap: 12px !important;
+    }
+
+    .rightItem ul {
+        gap: 10px !important;
     }
 }

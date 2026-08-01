@@ -59,7 +59,7 @@ export default function HeroNews() {
                                     <div className={styles.cardContent}>
                                         <h3>Excellent UCE Results 2024</h3>
                                          
-                                        <p>Busoga High School achieves 95% pass rate in Uganda<br/> Certificate of Education examinations.</p>
+                                        <p>Busoga High School achieves 95% pass rate in Uganda Certificate of Education examinations.</p>
                                     </div>
 
                              </div>
@@ -97,7 +97,7 @@ export default function HeroNews() {
                                     <div className={styles.cardContent}>
                                         <h3>New Science Laboratory Opened</h3>
                                          
-                                        <p>State-of-the-art chemistry and physics laboratory now<br/> 
+                                        <p>State-of-the-art chemistry and physics laboratory now
                                            available for advanced practical sessions.</p>
                                     </div>
 
@@ -136,7 +136,7 @@ export default function HeroNews() {
                                     <div className={styles.cardContent}>
                                         <h3>Inter-School Debate Championship</h3>
                                          
-                                        <p>Our debate team emerges victorious in the regional inter-<br/> 
+                                        <p>Our debate team emerges victorious in the regional inter-
                                            school debate championship.</p>
                                     </div>
 

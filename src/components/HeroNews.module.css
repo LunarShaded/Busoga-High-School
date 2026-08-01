@@ -250,6 +250,12 @@ body{
     align-items: center;
 }
 
+.NewsSection p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
 .termStroke h3{
     color: rgb(57, 56, 56);
     font-weight: 500;
@@ -260,22 +266,175 @@ body{
     color: rgb(40, 39, 39);
 }
 
-@media (max-width: 1024px){
-    .NewsEventBox{
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .NewsSection {
+        padding: 80px 20px 40px 20px !important;
+        min-height: auto !important; 
+        height: auto !important;
     }
 
-    .eventCard{
-        width: 100%;
+    .mainTitle {
+        margin-bottom: 50px !important;
+    }
+
+    .NewsEventBox {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 40px !important;
+    }
+
+    .newsBox, 
+    .eventsBox {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    .eventCard {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
 
-@media (max-width: 768px){
-    .newsCard{
-        padding: 18px 20px;
+
+@media (max-width: 768px) {
+    .NewsSection {
+        padding: 50px 16px 30px 16px !important;
     }
 
-    .mainTitle{
-        margin-bottom: 40px;
+    .mainTitle {
+        margin-bottom: 30px !important;
+        gap: 10px !important;
+    }
+
+    .mainTitle h1 {
+        font-size: 28px !important;
+        line-height: 1.3 !important;
+    }
+
+    .mainTitle p {
+        font-size: 16px !important;
+    }
+
+
+    .newsCard {
+        padding: 16px !important;
+        gap: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .cardContent h3 {
+        font-size: 19px !important;
+        line-height: 1.3 !important;
+    }
+
+    .cardContent p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    .topTitle h2,
+    .termDatesCard h2 {
+        font-size: 22px !important;
+    }
+
+
+    .cardTitleContent,
+    .eventTitle,
+    .eventDate {
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .NewsSection {
+        padding: 30px 10px 20px 10px !important;
+    }
+
+    .mainTitle h1 {
+        font-size: 22px !important;
+    }
+
+    .mainTitle p {
+        font-size: 14px !important;
+    }
+
+
+    .newsCard {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 14px 12px !important;
+        gap: 10px !important;
+    }
+
+    .cardIconBox {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 4px !important;
+    }
+
+    .cardIcon {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    .cardContent {
+        margin-top: 6px !important;
+        gap: 8px !important;
+    }
+
+    .cardContent h3 {
+        font-size: 17px !important;
+    }
+
+    .cardContent p {
+        font-size: 13.5px !important;
+    }
+
+   
+    .eventCard, 
+    .termDatesCard {
+        padding: 12px 10px !important;
+        border-radius: 10px !important;
+    }
+
+    .eventSection {
+        padding: 10px 0 !important;
+    }
+
+    .eventTitle h3 {
+        font-size: 15px !important;
+    }
+
+    .eventLight {
+        font-size: 12px !important;
+        padding: 2px 6px !important;
+    }
+
+   
+    .termStroke {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 4px !important;
+    }
+
+    .termStroke h3 {
+        font-size: 14px !important;
+    }
+
+    .termStroke p {
+        font-size: 13px !important;
+    }
+
+  
+    .NewsSection *,
+    .newsCard *,
+    .eventCard * {
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
     }
 }

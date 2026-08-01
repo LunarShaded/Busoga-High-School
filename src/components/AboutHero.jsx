@@ -24,7 +24,7 @@ export default function AboutHero(){
        <div className={styles.heroTitle}>
           <h1>About Busoga High School</h1>
           <p>A leading secondary education institution 
-             committed to academic<br/>
+             committed to academic
              excellence and character development</p>
        </div>
             {/* About content */}
@@ -32,11 +32,11 @@ export default function AboutHero(){
          {/* School history */}
            <div className={styles.heroHistory}>
             <h2>Our History</h2>
-            <p>Busoga High School, located in Kamuli, Uganda, has long been a place of learning, growth, and opportunity. <br/>
-              Founded with the vision of empowering young minds, the school has guided generations of students toward brighter futures.<br/></p>
+            <p>Busoga High School, located in Kamuli, Uganda, has long been a place of learning, growth, and opportunity. 
+              Founded with the vision of empowering young minds, the school has guided generations of students toward brighter futures.</p>
 
-            <p>Through dedication to education, discipline, and community values,<br/>
-               Busoga High School continues to shape responsible and ambitious individuals<br/>
+            <p>Through dedication to education, discipline, and community values,
+               Busoga High School continues to shape responsible and ambitious individuals
                ready to make a difference in the world.</p>
          </div>
          
@@ -48,7 +48,7 @@ export default function AboutHero(){
                <Bullseye className={styles.iconParagraph}/>
                <div>
                 <h2>Our Mission</h2>
-                <p>To provide quality, holistic education that develops intellectual capacity, moral<br/>
+                <p>To provide quality, holistic education that develops intellectual capacity, moral
                    character, and practical skills for responsible citizenship.</p>
                </div>
             </div>
@@ -56,7 +56,7 @@ export default function AboutHero(){
                <EyeAlt className={styles.iconParagraph}/>
             <div>
                <h2>Our Vision</h2>
-               <p>To be a center of academic excellence that produces well-rounded individuals equipped<br/>
+               <p>To be a center of academic excellence that produces well-rounded individuals equipped
                   to contribute meaningfully to national and global development.</p>
             </div>
            </div>
@@ -73,7 +73,7 @@ export default function AboutHero(){
             </div>
             <h1>Accreditation</h1>
             <p>Busoga High School is fully accredited by the <strong>Uganda Ministry of Education and Sports</strong>, 
-               ensuring our curriculum meets the highest<br/> national standards for secondary education.</p>
+               ensuring our curriculum meets the highest national standards for secondary education.</p>
          </div>
        </div>
 

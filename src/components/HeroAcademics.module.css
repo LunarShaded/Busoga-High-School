@@ -306,3 +306,104 @@ body{
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+
+    .admissionsSection,
+    .aboutSection {
+        padding: 24px 10px !important;
+    }
+
+
+    .applicationCard, 
+    .officeCard, 
+    .accreditationWrapper,
+    .heroHistory,
+    .heroMission {
+        padding: 14px 12px !important;
+        border-radius: 8px !important;
+    }
+
+    .contactBox {
+        padding: 12px !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+
+    .contactBox > *,
+    .contactBox div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+        width: 100% !important;
+    }
+
+
+    .contactBox p,
+    .contactBox a,
+    .contactBox span,
+    .contactBox li {
+        font-size: 13.5px !important;
+        line-height: 1.4 !important;
+        word-break: break-all !important; 
+        overflow-wrap: anywhere !important;
+        white-space: normal !important;
+    }
+
+    .contactBox h2,
+    .contactBox h3 {
+        font-size: 16px !important;
+        line-height: 1.3 !important;
+    }
+
+   
+    .contactBox svg,
+    .contactBox img,
+    .contactBox .icon {
+        width: 24px !important;
+        height: 24px !important;
+        flex-shrink: 0 !important;
+    }
+
+
+    .mainTitle h1,
+    .heroTitle h1 {
+        font-size: 20px !important;
+        line-height: 1.25 !important;
+    }
+
+    .mainTitle p,
+    .heroTitle p {
+        font-size: 13.5px !important;
+    }
+
+    .admissionTitle h2,
+    .officeText h2 {
+        font-size: 17px !important;
+    }
+
+    .requirementsText p,
+    .officeText p,
+    .listItem p {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+
+   
+    .requirementsList ul {
+        padding-left: 14px !important;
+    }
+
+    .requirementsList ul li {
+        font-size: 13px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .titleIcon,
+    .checkIcon {
+        width: 26px !important;
+        height: 26px !important;
+    }
+}

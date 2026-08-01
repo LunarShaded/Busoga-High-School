@@ -203,143 +203,61 @@ body{
     margin-bottom: 5px;
 }
 
-@media (max-width: 1024px){
-
-    .cardsBox{
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 768px) {
+   
+    .contactBox {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        gap: 16px !important;
+        overflow: visible !important; 
     }
 
-    .applicationCard{
-        max-width: 800px;
+    
+    .contactBox > *,
+    .contactBox div,
+    .contactBox a,
+    .contactBox p,
+    .contactBox span {
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        
+      
+        word-break: break-word !important; 
+        overflow-wrap: anywhere !important;
+        white-space: normal !important;
+        
+
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
-}
 
-@media (max-width: 768px){
-
-    .admissionsSection{
-        padding: 50px 15px;
+    .contactBox p,
+    .contactBox a,
+    .contactBox span {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
     }
 
-    .mainTitle h1{
-        font-size: 36px;
+    .contactBox h2,
+    .contactBox h3,
+    .contactBox h4 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+        word-break: break-word !important;
     }
 
-    .mainTitle p{
-        font-size: 19px;
+  
+    .contactBox svg,
+    .contactBox img {
+        max-width: 32px !important;
+        max-height: 32px !important;
+        flex-shrink: 0 !important;
+        display: inline-block !important;
     }
-
-    .applicationCard{
-        padding: 28px;
-    }
-
-    .admissionTitle h2{
-        font-size: 28px;
-    }
-
-    .requirementsText p{
-        font-size: 18px;
-    }
-
-    .requirementsList ul li{
-        font-size: 17px;
-    }
-
-    .listItem{
-        gap: 15px;
-    }
-
-    .listItem h3{
-        font-size: 18px;
-    }
-
-    .listItem p{
-        font-size: 15px;
-    }
-
-    .officeCard{
-        padding: 20px;
-    }
-
-    .officeText h2{
-        font-size: 24px;
-    }
-
-    .officeText p{
-        font-size: 17px;
-    }
-
-}
-
-@media (max-width: 480px){
-
-    .mainTitle h1{
-        font-size: 30px;
-    }
-
-    .mainTitle p{
-        font-size: 17px;
-    }
-
-    .applicationCard{
-        padding: 22px;
-    }
-
-    .admissionTitle{
-        align-items: flex-start;
-    }
-
-    .admissionTitle h2{
-        font-size: 24px;
-    }
-
-    .titleIcon{
-        width: 36px;
-        height: 36px;
-    }
-
-    .requirementsText p{
-        font-size: 16px;
-    }
-
-    .requirementsList ul li{
-        font-size: 15px;
-        align-items: flex-start;
-    }
-
-    .processList{
-        padding-bottom: 40px;
-    }
-
-    .listItem{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .listItem h3{
-        font-size: 17px;
-    }
-
-    .listItem p{
-        font-size: 14px;
-    }
-
-    .listCount{
-        font-size: 18px;
-    }
-
-    .officeText h2{
-        font-size: 22px;
-    }
-
-    .officeText p{
-        font-size: 16px;
-    }
-
-    .contactBox{
-        flex-direction: column;
-        gap: 25px;
-    }
-
 }

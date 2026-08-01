@@ -21,7 +21,7 @@ body{
 }
 
 .count{
-    font-size: clamp(24px, 3vw, 28px);
+    font-size: clamp(20px, 4vw, 28px);
 }
 
 .studentsWord{
@@ -60,12 +60,12 @@ body{
 }
 
 .heroTitle h1{
-    font-size: clamp(42px, 4vw, 38px);
+    font-size: clamp(28px, 2.5vw, 42px);
     font-weight: 600;
 }
 
 .heroTitle p{
-    font-size: clamp(18px, 2.5vw, 24px);
+    font-size: clamp(16px, 2.5vw, 22px);
 }
 
 .heroAbout{
@@ -111,6 +111,12 @@ body{
     width: 44px;
     height: 44px;
     flex-shrink: 0;
+}
+
+.heroHistory p,
+.heroMission p,
+.accreditationWrapper p{
+    line-height: 1.8;
 }
 
 .heroHistory h2{
@@ -172,74 +178,65 @@ body{
     line-height: 1.6;
 }
 
-@media (max-width: 992px){
 
-    .heroAbout{
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 768px) {
+
+    html, body, .aboutSection {
+        height: auto !important;
+        min-height: 100% !important;
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+    }
+
+    .aboutSection {
+        padding: 40px 15px !important;
+    }
+
+    .heroAbout {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 20px !important;
     }
 
     .heroHistory,
-    .heroMission{
-        max-width: 100%;
+    .heroMission {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        background: #ffffff; 
+        padding: 20px !important;
+        border-radius: 10px;
     }
 
-    .accreditationWrapper{
-        padding: 30px 40px 40px 40px;
-    }
-}
-
-@media (max-width: 768px){
-
-    .aboutSection{
-        padding-top: 80px;
+   
+    .heroTitle h1 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
     }
 
-    .heroTitle{
-        gap: 20px;
-    }
-
-    .heroAbout{
-        gap: 30px;
-    }
-
+    .heroTitle p,
     .heroHistory p,
-    .heroMission p{
-        font-size: 17px;
+    .heroMission p,
+    .accreditationWrapper p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        display: block !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
-    .accreditation{
-        padding-top: 70px;
+   
+    .accreditation {
+        padding-top: 30px !important;
+        width: 100% !important;
     }
 
-    .accreditationWrapper{
-        padding: 24px;
-    }
-}
-
-@media (max-width: 480px){
-
-    .studentsWrapper{
-        text-align: center;
-    }
-
-    .icon{
-        width: 44px;
-        height: 44px;
-    }
-
-    .iconParagraph{
-        width: 36px;
-        height: 36px;
-    }
-
-    .checkIcon{
-        width: 44px;
-        height: 44px;
-    }
-
-    .heroHistory p,
-    .heroMission p{
-        font-size: 16px;
+    .accreditationWrapper {
+        padding: 20px 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 }

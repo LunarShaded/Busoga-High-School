@@ -90,58 +90,71 @@ p{
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width:768px){
 
-    .header {
-      padding: 10px 12px;
+    .header{
+      padding:12px 15px;
+      flex-wrap:wrap;
+      gap:12px;
     }
   
-    .navLinks ul {
-      gap: 12px;
+    .logo{
+      flex:1;
     }
   
-    .navLinks ul a {
-      font-size: 13px;
+    .navLinks{
+      width:100%;
     }
   
-    h1 {
-      font-size: 18px;
+    .navLinks ul{
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:15px;
     }
   
-    p {
-      font-size: 12px;
+    .navLinks a{
+      font-size:15px;
     }
   
-    .icon {
-      width: 30px;
-      height: 30px;
+    h1{
+      font-size:20px;
+    }
+  
+    p{
+      display:none;
+    }
+  
+    .icon{
+      width:32px;
+      height:32px;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width:480px){
 
-    .header {
-      padding: 8px 10px;
+    .header{
+      padding:10px;
     }
   
-    .navLinks ul {
-      gap: 8px;
+    .logo{
+      justify-content:center;
+      width:100%;
     }
   
-    .navLinks ul a {
-      font-size: 12px;
+    .navLinks ul{
+      gap:12px;
     }
   
-    h1 {
-      font-size: 16px;
+    .navLinks a{
+      font-size:14px;
     }
   
-    p {
-      display: none;
+    h1{
+      font-size:18px;
     }
   
-    .icon {
-      width: 26px;
-      height: 26px;
+    .icon{
+      width:28px;
+      height:28px;
     }
   }
