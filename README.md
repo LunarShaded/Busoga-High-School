@@ -6,6 +6,10 @@ This project was created as a ready-to-use frontend template that can be easily 
 
 ---
 
+You can visit the site using this link:
+
+https://lunarshaded.github.io/Busoga-High-School/
+
 ## ✨ Features
 
 - 📱 Fully responsive design for desktop, tablet, and mobile devices
